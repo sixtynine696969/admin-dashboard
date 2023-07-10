@@ -11,10 +11,10 @@
 }
 
 .grid {
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 215px 1fr;
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: 130px 1fr;
 }
 
 .sidebar {
