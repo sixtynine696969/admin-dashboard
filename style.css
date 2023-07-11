@@ -7,7 +7,11 @@
 :root {
     --blue: #0ea5e9;
     --yellow: #facc15;
-    --gray: #e7e5e4;
+    --gray: #e2e8f0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .grid {
@@ -27,11 +31,13 @@
     gap: 3rem;
 }
 
-.sidebar img {
-    color: white;
+img {
     height: 18px;
+    /* margin-right: 10px; */
+}
+
+.sidebar img {
     filter: invert(100%);
-    margin-right: 10px;
 }
 
 .sidebar p {
@@ -67,7 +73,37 @@
 
 .header {
     background-color: white;
-    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1.6fr 2fr;
+}
+
+.header-top {
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-top p {
+    font-weight: bold;
+}
+
+input[type="search"] {
+    appearance: none;
+    background-color: var(--gray);
+    border: none;
+    padding: 3px 7px;
+    border-radius: 10px;
+}
+
+.bell {
+    margin-left: 50px;
+}
+
+.avatar-mini {
+    height: 40px;
+    border-radius: 100%;
 }
 
 .main-content {
