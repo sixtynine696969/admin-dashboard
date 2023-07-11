@@ -142,4 +142,41 @@ input[type="search"] {
 }
 .main-content {
     background-color: var(--gray);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px;
+}
+
+.main-left {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 20px;
+}
+
+.main-left .card {
+    background-color: white;
+    border-left: 6px solid #facc15;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+}
+
+.main-left .card p {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.main-left .card p:nth-child(2) {
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.icons {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    justify-content: center;
+    align-self: end;
+    justify-self: end;
 }
