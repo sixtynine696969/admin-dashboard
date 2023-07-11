@@ -152,6 +152,15 @@ input[type="search"] {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-rows: 200px;
     gap: 20px;
+    margin-top: 33px;
+    position: relative
+}
+
+.main-title {
+    position: absolute;
+    top: -32px;
+    font-weight: bold;
+    left: 3px;
 }
 
 .main-left .card {
