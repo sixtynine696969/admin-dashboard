@@ -74,7 +74,9 @@ img {
 .header {
     background-color: white;
     display: grid;
-    grid-template-rows: 1.6fr 2fr;
+    grid-template-rows: 1.4fr 2fr;
+    position: relative;
+    box-shadow: 2px 1px 5px rgb(192, 192, 192);
 }
 
 .header-top {
@@ -87,6 +89,7 @@ img {
 
 .header-top p {
     font-weight: bold;
+    font-size: 0.9rem;
 }
 
 input[type="search"] {
@@ -106,6 +109,37 @@ input[type="search"] {
     border-radius: 100%;
 }
 
+.header-bottom {
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-bottom img {
+    height: 60px;
+    border-radius: 100%;
+}
+
+.header-bottom p {
+    font-weight: bold;
+}
+
+.header-bottom p:nth-child(1) {
+    font-size: 0.7rem;
+
+}
+
+.header-bottom button {
+    font-weight: bold;
+    width: 90px;
+    padding: 10px 0;
+    background-color: var(--blue);
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
 .main-content {
     background-color: var(--gray);
 }
