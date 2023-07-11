@@ -164,7 +164,7 @@ input[type="search"] {
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(225px, 1fr));
+    grid-auto-rows: auto;
     gap: 20px;
 }
 
@@ -200,6 +200,7 @@ input[type="search"] {
 .content-box p:nth-child(2) {
     font-size: 0.85rem;
     color: gray;
+    margin-bottom: 20px;
 }
 
 .controls {
